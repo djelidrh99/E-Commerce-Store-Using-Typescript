@@ -1,0 +1,9 @@
+.container {
+  @apply flex justify-center mt-5 items-center flex-col gap-5;
+}
+.imgContainer {
+  @apply flex justify-center items-center p-5   bg-[var(--bg-tertiary)]  rounded-full  lg:w-48 lg:h-48 w-36 h-36;
+}
+.titleContainer {
+  @apply flex justify-center items-center flex-col;
+}

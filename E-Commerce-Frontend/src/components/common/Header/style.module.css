@@ -1,0 +1,38 @@
+.headerContainer {
+  @apply flex justify-between items-center bg-[var(--bg-primary)] max-lg:px-2 lg:px-10 container py-2 mx-auto  max-lg:gap-2 min-h-14   flex-wrap ;
+}
+
+.logo {
+  @apply text-white font-bold text-4xl;
+}
+
+.logo > span {
+  @apply w-1 inline-block h-1 rounded-full bg-[var(--bg-secondary)];
+}
+
+.navLinks {
+  @apply relative justify-center items-center mx-auto  hidden w-fit  p-1 lg:!flex ;
+}
+
+.navLinksMobile {
+@apply flex lg:!hidden relative mx-auto w-full justify-center items-center overflow-hidden
+}
+
+.navLinksMobile li {
+  @apply flex-grow
+}
+
+
+.iconNavLinks {
+  @apply flex justify-center items-center space-x-1;
+}
+
+.iconNavLinks li {
+  @apply cursor-pointer px-1 py-0.5;
+}
+
+.iconNavLinks li > svg {
+  @apply w-5 h-5 font-bold;
+}
+
+

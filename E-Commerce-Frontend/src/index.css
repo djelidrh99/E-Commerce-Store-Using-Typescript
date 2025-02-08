@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+@layer base {
+  :root {
+    --bg-primary:rgb(45 83 86);
+    --bg-primariy-oppacity:rgba(45 83 86 0.8);
+    --bg-secondary:rgb(208 148 35);
+    --bg-tertiary: rgb(245 245 245);
+    --text-secondary:rgb(107, 114, 128);
+}
+}
+
+
+

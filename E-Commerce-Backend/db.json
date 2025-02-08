@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "email": "djelidrh@gmail.com",
+      "password": "$2a$10$DqQX/fEJI5Hd/l4y/B6rYeDeVjitNPS5QJBWSXWLRV1O9GZr7gjGe",
+      "firstName": "djelid",
+      "lastName": "rh",
+      "id": 1
+    },
+    {
+      "email": "uuu@jk.com",
+      "password": "$2a$10$WgNzFTvXkz/Ocl0YWUu4weUGYfcUMVKeuY232ZNKZYhzX.oaTAUt2",
+      "firstName": "gyh",
+      "lastName": "ujj",
+      "id": 2
+    },
+    {
+      "email": "aze@gmail.com",
+      "password": "$2a$10$IRYhPutoG1JRj9kxAtgXTO2.4s/zzNYolOf9pPmViP9VnGJKJ6Pc.",
+      "firstName": "az",
+      "lastName": "er",
+      "id": 3
+    },
+    {
+      "email": "ghyh@jk.com",
+      "password": "$2a$10$wWyrspSPw0XsQhlfbDyASejpzo2qPlzn1LtAmMWBuYmc3lxhgpKBm",
+      "firstName": "aze",
+      "lastName": "azettt",
+      "id": 4
+    },
+    {
+      "email": "ER@g.com",
+      "password": "$2a$10$t8DA.f3xe4MY0pbIQDRpKe2kimG.qAWbdi5av/eSodCeB8TKLHEne",
+      "firstName": "YH",
+      "lastName": "GGG",
+      "id": 5
+    },
+    {
+      "email": "djelida871@gmail.com",
+      "password": "$2a$10$Wv855Bmisvijn.qBo88s9OlRj.IZr7PQ.iK7356fIwp1aBPF/.jSm",
+      "firstName": "dj",
+      "lastName": "dd",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "men",
+      "prefix": "men",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/cfb357649428__hp-w12-22032022-h_m-men.jpg"
+    },
+    {
+      "id": 2,
+      "title": "women",
+      "prefix": "women",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/30d354267a09b__hp-w12-22032022-h_m-women_dresses.jpg"
+    },
+    {
+      "id": 3,
+      "title": "kids",
+      "prefix": "kids",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/37d243d334c63__hp-w12-22032022-h_m-kids1.jpg"
+    },
+    {
+      "id": 4,
+      "title": "baby",
+      "prefix": "baby",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/28948d47ae6e8__h_m-w39-28092022-4066c-1x1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "sport",
+      "prefix": "sport",
+      "img": "https://cdn-eu.dynamicyield.com/api/9876644/images/1dda9ae79a671__h_m-w40-06102022-7416b-1x1.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Regular Fit Jersey top",
+      "price": "249.00",
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:a51bbdff-c069-4b0f-a51c-63e6ba7d6bae/as/EID-15cc440d2f8ffe099d335f644dc215f83486d5d1.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 2,
+      "title": "Regular Fit Jersey top",
+      "price": "229.00",
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:6bdda2d0-6f16-4a16-a63a-547c20c15bba/as/EID-51bd915cde2f2a20facded0c2044f13659be31f2.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 3,
+      "title": "Cotton polo shirt",
+      "price": "200.00",
+      "cat_prefix": "men",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:437262fa-d8cc-465b-98ce-07bb515066c3/as/EID-7eb3e88cedb51d3c3410995dd3031006c39192ed.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 4,
+      "title": "Cotton t-shirt",
+      "price": "100.00",
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:0e058989-1961-40fb-ba66-d64b31d62ede/as/EID-67560397bc969abf3cc2c151bded76e62f1307d8.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 5,
+      "title": "Sweatshirt shorts",
+      "price": "300.00",
+      "cat_prefix": "women",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:4d98eaab-482f-4ae5-9302-f524ed35f890/as/EID-e7d847343b94a8a88706e992b4e27a0b58f1b495.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 6,
+      "title": "Velour top",
+      "price": "300.00",
+      "cat_prefix": "kids",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:25e58ffe-cb1d-434b-a14c-0619a78b379f/as/EID-784ba11e1a4b2d7a08b579a034e75ef8dcf801de.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 9,
+      "title": "Pile all-in-one suit with ears",
+      "price": "500.00",
+      "cat_prefix": "baby",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:5b03c565-509c-4918-b9fb-c2dc8c7e6350/as/EID-551e1d6f30909a4e66a8e24a5754badf07e39106.jpg?preferwebp=true&height=630",
+      "max": 4
+    },
+    {
+      "id": 17,
+      "title": "Regular Fit football shirt",
+      "price": "449.00",
+      "cat_prefix": "sport",
+      "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:dfab99f3-ac26-464b-8123-356cfcb0a4d1/as/EID-e236b66e6e4135cfa52448c2ba79409ace1e1ada.jpg?preferwebp=true&height=630",
+      "max": 4
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 6,
+      "productId": 1,
+      "id": 3
+    },
+    {
+      "productId": 1,
+      "id": 4
+    },
+    {
+      "productId": 1,
+      "id": 5
+    },
+    {
+      "productId": 1,
+      "id": 6
+    },
+    {
+      "productId": 1,
+      "id": 7
+    },
+    {
+      "productId": 1,
+      "id": 8
+    },
+    {
+      "productId": 2,
+      "id": 9
+    },
+    {
+      "productId": 2,
+      "id": 10
+    },
+    {
+      "productId": 2,
+      "id": 11
+    },
+    {
+      "productId": 1,
+      "id": 12
+    },
+    {
+      "productId": 1,
+      "id": 13
+    },
+    {
+      "productId": 1,
+      "id": 14
+    },
+    {
+      "productId": 1,
+      "id": 15
+    },
+    {
+      "productId": 1,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "productId": 4,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "productId": 3,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "productId": 2,
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "productId": 5,
+      "id": 21
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "totalPrice": 600,
+      "placeOrders": [
+        {
+          "id": 3,
+          "title": "Cotton polo shirt",
+          "quantity": 3,
+          "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:437262fa-d8cc-465b-98ce-07bb515066c3/as/EID-7eb3e88cedb51d3c3410995dd3031006c39192ed.jpg?preferwebp=true&height=630",
+          "price": "200.00"
+        }
+      ],
+      "id": 1
+    }
+  ]
+}
