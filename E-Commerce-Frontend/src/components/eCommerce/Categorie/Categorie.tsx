@@ -1,4 +1,4 @@
-import lighting from "@assets/img/lighting.png";
+import lighting from "@assets/img/lighting.jpg";
 import style from './style.module.css'
 
 const {container,imgContainer,titleContainer}=style
