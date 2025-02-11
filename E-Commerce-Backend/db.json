@@ -48,31 +48,31 @@
       "id": 1,
       "title": "decor",
       "prefix": "decor",
-      "img": "https://pampafurniturela.com/wp-content/uploads/2021/10/LZB608-GR-1-1000x1000.jpg"
+      "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/img/decor.png"
     },
     {
       "id": 2,
-      "title": "bedroom",
+      "title": "bed room",
       "prefix": "bedroom",
-      "img": "https://pampafurniturela.com/wp-content/uploads/2024/12/18100-02_2__86754-1000x1000.jpg"
+      "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/img/bedroom.png"
     },
     {
       "id": 3,
-      "title": "diningroom",
+      "title": "dining room",
       "prefix": "diningroom",
-      "img": "https://pampafurniturela.com/wp-content/uploads/2021/10/192502_1-1000x1000.jpg"
+      "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/img/diningroom.png"
     },
     {
       "id": 4,
-      "title": "livingroom",
+      "title": "living room",
       "prefix": "livingroom",
-      "img": "https://pampafurniturela.com/wp-content/uploads/2022/03/Maxwell-Sectional-Sofa-Effie-Linen-square-1000x1000.png"
+      "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/img/livingroom.png"
     },
     {
       "id": 5,
       "title": "lighting",
       "prefix": "ilghting",
-      "img": "https://pampafurniturela.com/wp-content/uploads/2021/05/94425_3-1000x1392.jpg"
+      "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/img/lighting.png"
     }
   ],
   "products": [

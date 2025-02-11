@@ -1,0 +1,29 @@
+.productContainer {
+    @apply flex flex-col   bg-white shadow-sm rounded-lg overflow-hidden relative
+
+}
+
+.imgContainer {
+    @apply bg-[var(--bg-tertiary)] flex !aspect-square px-2 py-4 w-full justify-center items-center
+
+}
+
+.informationBox {
+    @apply flex items-center px-2 py-4 justify-between rounded-md bg-[var(--bg-primary)]
+
+}
+
+.addToCartBox {
+    @apply bg-[var(--bg-secondary-oppacity)] transition-all  hover:bg-[var(--bg-secondary)] p-1.5 sm:!p-2 cursor-pointer flex justify-center rounded-full items-center
+
+}
+
+.likeBox {
+    @apply sm:p-2 p-1.5 rounded-full cursor-pointer absolute bg-white top-[4%] right-[4%]
+
+}
+
+.soldBox {
+    @apply sm:p-2 p-1 text-xs sm:text-sm  flex justify-center items-center w-10 h-6   sm:w-12 sm:h-8 rounded-full text-white cursor-pointer absolute bg-[var(--bg-primariy-oppacity)] top-[4%] left-[4%]
+
+}

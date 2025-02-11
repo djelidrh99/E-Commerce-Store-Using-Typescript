@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "products/:prefix",
+        path: "products",
         element: (
           <Suspense>
             <Products />
