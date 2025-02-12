@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <div className="bg-[var(--bg-primary)]">
     <div className=" relative flex flex-col min-h-screen">
-      <header className="w-full left-0 top-0 mx-auto z-50 sticky bg-[var(--bg-primary)]">
+      <header className="w-full left-0 top-0 mx-auto z-50 shadow-md sticky bg-[var(--bg-primary)]">
         <Header />
       </header>
       <div className="flex-1  ">

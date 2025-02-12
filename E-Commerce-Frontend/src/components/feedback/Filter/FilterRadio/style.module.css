@@ -15,7 +15,4 @@ label>span:first-of-type>span {
     @apply bg-[var(--bg-secondary)]
 }
 
-div>input:checked {
-    @apply !bg-red-500
-}
 

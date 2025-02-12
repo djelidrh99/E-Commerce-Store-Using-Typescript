@@ -1,5 +1,5 @@
 .headerContainer {
-  @apply flex justify-between items-center bg-[var(--bg-primary)] max-lg:px-2 lg:px-10 container py-2 mx-auto  max-lg:gap-2 min-h-14   flex-wrap ;
+  @apply flex justify-between items-center bg-[var(--bg-primary)] max-lg:px-2 lg:px-10 container py-2 mx-auto  max-lg:gap-2 min-h-14   flex-wrap  ;
 }
 
 .logo {

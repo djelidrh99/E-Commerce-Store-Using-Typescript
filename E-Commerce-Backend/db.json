@@ -78,9 +78,9 @@
   "products": [
     {
       "id": 1,
-      "title": "Regular Fit Jersey top",
-      "price": "249.00",
-      "cat_prefix": "men",
+      "title": "Karl T. Swivel Chair",
+      "price": "445.00",
+      "cat_prefix": "bedroom",
       "img": "https://media.alshaya.com/adobe/assets/urn:aaid:aem:a51bbdff-c069-4b0f-a51c-63e6ba7d6bae/as/EID-15cc440d2f8ffe099d335f644dc215f83486d5d1.jpg?preferwebp=true&height=630",
       "max": 4
     },
@@ -141,6 +141,13 @@
       "max": 4
     }
   ],
+
+
+
+
+
+
+
   "wishlist": [
     {
       "userId": 6,

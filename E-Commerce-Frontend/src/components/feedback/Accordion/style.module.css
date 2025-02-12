@@ -1,0 +1,3 @@
+.accordionContainer {
+    @apply border border-[var(--text-tertiary)] p-2 rounded-lg
+}
