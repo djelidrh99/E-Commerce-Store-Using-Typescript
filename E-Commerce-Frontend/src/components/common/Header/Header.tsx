@@ -20,10 +20,10 @@ const Header = () => {
 
       <ul className={navLinks}>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Home" to=""/>
-        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Products" to="products"/>
+        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Products" to="products/all"/>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Categories" to="categories"/>
-        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="About Us" to="aboutUs"/>
-        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Contact Us" to="contactUs"/>
+        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="About" to="aboutUs"/>
+        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Contact" to="contactUs"/>
 
         <Cursor position={position} />
       </ul>
@@ -47,7 +47,7 @@ const Header = () => {
       {/* //mobileNaveLInk */}
       <ul className={navLinksMobile}>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Home" to=""/>
-        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Products" to="products"/>
+        <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Products" to="products/all"/>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Categories" to="categories"/>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="About Us" to="aboutUs"/>
         <CustomNavLink handleCursorPosistion={handleCursorPosistion} title="Contact Us" to="contactUs"/>

@@ -19,11 +19,11 @@
 }
 
 .likeBox {
-    @apply sm:p-2 p-1.5 rounded-full cursor-pointer absolute bg-white top-[4%] right-[4%]
+    @apply sm:p-2 p-1.5 rounded-full cursor-pointer absolute bg-white top-[1%] right-[4%]
 
 }
 
 .soldBox {
-    @apply sm:p-2 p-1 text-xs sm:text-sm  flex justify-center items-center w-10 h-6   sm:w-12 sm:h-8 rounded-full text-white cursor-pointer absolute bg-[var(--bg-primariy-oppacity)] top-[4%] left-[4%]
+    @apply sm:p-2 p-1 text-xs sm:text-sm  flex justify-center items-center w-10 h-6   sm:w-12 sm:h-8 rounded-full text-white cursor-pointer absolute bg-[var(--bg-primariy-oppacity)] top-[1%] left-[4%]
 
 }

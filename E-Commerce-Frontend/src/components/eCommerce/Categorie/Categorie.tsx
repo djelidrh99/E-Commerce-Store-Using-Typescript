@@ -16,7 +16,7 @@ const Categorie = ({img,prefix,title}:TCategories) => {
       </div>
       <div className={box}>
         <div>
-        <h5 className="font-semibold text-sm lg:text-base capitalize">{title}</h5>
+        <h5 className="font-semibold text-sm text-black lg:text-base capitalize">{title}</h5>
         <h6 title='discover more Products' className="text-[var(--text-secondary)] capitalize text-xs lg:text-base whitespace-nowrap overflow-hidden text-ellipsis max-sm:w-20">discover more Products</h6>
         </div>
         <div className={arrowContainer}>

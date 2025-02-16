@@ -1,34 +1,42 @@
 import { Button, ButtonGroup } from "@chakra-ui/react";
 import AccordionComponenet from "@components/feedback/Accordion/AccordionComponenet";
 import { useState } from "react";
+import { useNavigate, useParams } from "react-router";
 import style from "./style.module.css";
+import GridList from "@/components/common/GridList/GridList";
 
 const { buttonStyle, activeButtonStyle } = style;
 
-const ToggleFiter = () => {
-  const [selected, setIsSelected] = useState("");
+type TToggleFilterProps = {
+  productByMatrial: string[];
+};
 
-  const buttonList = ["one", "two", "three"];
-
+const ToggleFiter = ({ productByMatrial }: TToggleFilterProps) => {
+  const navigate = useNavigate();
+  const params = useParams();
   const handelSelected = (value: string) => {
-    setIsSelected(value);
+    navigate(`/products/${value}`);
   };
+
   return (
     <AccordionComponenet title="Categories">
       <ButtonGroup className="flex flex-wrap" size="sm" variant="outline">
-        {buttonList.map((item, index) => {
-          return (
+        <GridList
+          itemArray={productByMatrial}
+          callBackFunc={(item) => (
             <Button
-              key={index}
+              key={item}
               onClick={() => {
                 handelSelected(item);
               }}
-              className={selected === item ? activeButtonStyle : buttonStyle}
+              className={
+                params.prefixId === item ? activeButtonStyle : buttonStyle
+              }
             >
               {item}
             </Button>
-          );
-        })}
+          )}
+        />
       </ButtonGroup>
     </AccordionComponenet>
   );
