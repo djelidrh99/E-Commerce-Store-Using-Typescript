@@ -1,7 +1,7 @@
 .buttonStyle {
-    @apply bg-white px-4 py-2 font-semibold !border !border-[var(--text-secondary)] !text-[var(--text-secondary)] rounded-full
+    @apply capitalize bg-white px-4 py-2 font-semibold !border !border-[var(--text-secondary)] !text-[var(--text-secondary)] rounded-full
 }
 
 .activeButtonStyle {
-    @apply bg-white px-4 py-2 font-semibold !border !border-[var(--text-secondary)] !text-[var(--bg-secondary)] rounded-full
+    @apply capitalize bg-white px-4 py-2 font-semibold !border !border-[var(--text-secondary)] !text-[var(--bg-secondary)] rounded-full
 }

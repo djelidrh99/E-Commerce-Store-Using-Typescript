@@ -3,6 +3,7 @@ import Heading from "@/components/common/Heading/Heading"
 import Product from "@/components/eCommerce/Product/Product"
 import ProductsFilter from "@/components/eCommerce/ProductFilter/ProductsFilter"
 import useProducts from "@/hooks/useProducts"
+import { AnimatePresence, motion } from "framer-motion";
 
 
 
@@ -17,12 +18,13 @@ const {productList,productsCategory,productsMatrial} =useProducts()
       
       <div className="container  grid grid-cols-1  md:grid-cols-4 gap-4 py-10 mx-auto max-lg:px-2 lg:px-10">
         <ProductsFilter productsFullInfo={productsCategory} productByMatrial={productsMatrial}/>
-        <div className=" md:col-span-3 grid grid-cols-3 max-sm:grid-cols-2 gap-2 sm:gap-5">
-         
-          <GridList itemArray={productList} callBackFunc={(item)=> <Product key={item.id} id={item.id} title={item?.title} price={item.price} img={item.img} cat_prefix={item.cat_prefix}/> } />
+        <motion.div layout className=" md:col-span-3 grid grid-cols-3 max-sm:grid-cols-2 gap-2 sm:gap-5">
+        <AnimatePresence>
+        <GridList itemArray={productList} callBackFunc={(item)=> <Product key={item.id} id={item.id} title={item?.title} price={item.price} img={item.img} cat_prefix={item.cat_prefix}/> } />
+        </AnimatePresence>
         
 
-        </div>
+        </motion.div>
      
 
     </div>

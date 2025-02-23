@@ -41,6 +41,8 @@ const useProducts = () => {
     }])).values()
   );
 
+  productsCategory.unshift({categoryTitle:"All",cat_prefix:"all"})
+
 
   const productsMatrial = Array.from(new Set(productsFullInfo.map((item) => {
     return item.matrial;
