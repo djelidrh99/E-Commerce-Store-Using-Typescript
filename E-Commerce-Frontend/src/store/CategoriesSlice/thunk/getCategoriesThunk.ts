@@ -8,7 +8,6 @@ export const getCategoriesThunk = createAsyncThunk(
 
     try {
       const response = await axios.get<TCategories[]>("/categories",{signal});
-      console.log(response.data)
       return response.data;
     } catch (error) {
       if (isAxiosError(error)) {

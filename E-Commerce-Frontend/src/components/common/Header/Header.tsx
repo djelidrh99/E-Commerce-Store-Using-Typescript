@@ -6,11 +6,14 @@ import style from "./style.module.css";
 import Cursor from "@/components/feedback/Cursor/Cursor";
 import useHeader from "@/hooks/useHeader";
 import CustomNavLink from "./NavLink/CustomNavLink";
+import { useNavigate } from "react-router-dom";
+
 
 const {navLinksMobile, headerContainer, logo, navLinks, iconNavLinks, } = style;
 
 const Header = () => {
   const { position, handleCursorPosistion } = useHeader();
+  const navigate = useNavigate();
 
   return (
     <div className={headerContainer}>
@@ -36,8 +39,10 @@ const Header = () => {
           <li className="">
             <Wishlist className="" />
           </li>
-          <li className="">
-            <Cart className="" />
+          <li onClick={()=>navigate("cart")} className="">
+          
+          <Cart  className="" />          
+          
           </li>
           <li className="">
             <User className="" />
