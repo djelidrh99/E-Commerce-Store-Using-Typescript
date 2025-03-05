@@ -12,12 +12,14 @@ type CartItemProps = {
   type CartItemComponentProps = {
     items: CartItemProps[];
     removeProductFromCart: (id: number) => void;
+    incrementQuantity: (id: number) => void;
+    decrementQuantity: (id: number) => void;
   };
 
-const CartFullInfo = ({ items,removeProductFromCart }: CartItemComponentProps) => {
+const CartFullInfo = ({ items,removeProductFromCart ,incrementQuantity,decrementQuantity }: CartItemComponentProps) => {
   return (
     <div className="flex  gap-5">
-        <CartItem items={items} removeProductFromCart={removeProductFromCart}/>
+        <CartItem items={items} removeProductFromCart={removeProductFromCart} incrementQuantity={incrementQuantity} decrementQuantity={decrementQuantity}/>
         <CartSubTotal/>
     </div>
   )

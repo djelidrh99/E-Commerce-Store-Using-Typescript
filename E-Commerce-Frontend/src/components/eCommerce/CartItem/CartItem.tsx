@@ -14,10 +14,12 @@ type CartItemProps = {
 type CartItemComponentProps = {
   items: CartItemProps[];
   removeProductFromCart: (id: number) => void;
+  incrementQuantity: (id: number) => void;
+  decrementQuantity: (id: number) => void;
 
 };
 
-const CartItem = memo( ({ items,removeProductFromCart }: CartItemComponentProps) => {
+const CartItem = memo( ({ items,removeProductFromCart,incrementQuantity,decrementQuantity }: CartItemComponentProps) => {
  
  
   return (
@@ -42,6 +44,7 @@ const CartItem = memo( ({ items,removeProductFromCart }: CartItemComponentProps)
       </Table.Header>
       <Table.Body className="bg-[var(--bg-tertiary)] ">
         {items.map((item) => (
+         
           <Table.Row key={item.id}>
             <Table.Cell className="px-5 text-black flex items-center gap-5">
               <div className="bg-white rounded-md flex  px-1 py-1 w-14 justify-center items-center">
@@ -56,9 +59,9 @@ const CartItem = memo( ({ items,removeProductFromCart }: CartItemComponentProps)
             <Table.Cell className="px-5 text-black">{item.price}</Table.Cell>
             <Table.Cell className="px-5 text-black" textAlign="end">
               <div className="flex items-center gap-1 bg-white rounded-full px-1.5 py-2">
-                <button className="text-black/60 w-6 h-6   md:w-9 md:h-9  flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">-</button>
+                <button onClick={()=>{decrementQuantity(item.id)}} className="text-black/60 w-6 h-6 cursor-pointer   md:w-9 md:h-9  flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">-</button>
                 <span className="flex-grow text-center">{item.quantity}</span>
-                <button className="text-black/60 w-6 h-6 md:w-9 md:h-9 flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">+</button>
+                <button onClick={()=>{incrementQuantity(item.id)}} className="text-black/60 w-6 h-6 md:w-9 md:h-9 cursor-pointer flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">+</button>
 
               </div>
             </Table.Cell>

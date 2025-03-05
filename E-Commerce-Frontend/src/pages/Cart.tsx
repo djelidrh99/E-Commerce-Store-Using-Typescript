@@ -4,7 +4,7 @@ import CartFullInfo from "@/components/eCommerce/CartFullInfo/CartFullInfo"
 import { getCartThunk } from "@/store/Cart/thunk/getCartThunk"
 import { useAppDispatch, useAppSelector } from "@/store/Hooks/hooks"
 import { useCallback, useEffect } from "react"
-import { removeProduct } from "@/store/Cart/cartSlice"
+import { decrementQuantity, incrementQuantity, removeProduct } from "@/store/Cart/cartSlice"
 
 const Cart = () => {
   const dispatch = useAppDispatch()
@@ -32,6 +32,16 @@ const Cart = () => {
     dispatch(removeProduct(id))
    }, [dispatch]
 )
+
+const incrementQuantityFromCart = useCallback( (id: number) => {
+  dispatch(incrementQuantity(id))
+ }, [dispatch]
+)
+
+const decrementQuantityFromCart = useCallback( (id: number) => {
+  dispatch(decrementQuantity(id))
+ }, [dispatch]
+)
   
 
   return (
@@ -40,7 +50,7 @@ const Cart = () => {
       <div className="bg-white ">
         <Loading loading={loading} error={null} type={"categories"}>
         <div className="container  grid grid-cols-1 text-red-500   py-10 mx-auto max-lg:px-2 lg:px-10">
-            <CartFullInfo items={cartProduct} removeProductFromCart={removeProductFromCart}/>
+            <CartFullInfo items={cartProduct} removeProductFromCart={removeProductFromCart} incrementQuantity={incrementQuantityFromCart} decrementQuantity={decrementQuantityFromCart}/>
         </div>
 
         </Loading>
