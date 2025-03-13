@@ -1,19 +1,15 @@
-import Search from "@assets/svg/search.svg?react";
-import User from "@assets/svg/user.svg?react";
-import Cart from "@assets/svg/cart.svg?react";
-import Wishlist from "@assets/svg/wishlist.svg?react";
+
 import style from "./style.module.css";
 import Cursor from "@/components/feedback/Cursor/Cursor";
 import useHeader from "@/hooks/useHeader";
 import CustomNavLink from "./NavLink/CustomNavLink";
-import { useNavigate } from "react-router-dom";
+import IconLinks from "@components/common/Header/IconLinks/IconLinks";
 
 
-const {navLinksMobile, headerContainer, logo, navLinks, iconNavLinks, } = style;
+const {navLinksMobile, headerContainer, logo, navLinks } = style;
 
 const Header = () => {
   const { position, handleCursorPosistion } = useHeader();
-  const navigate = useNavigate();
 
   return (
     <div className={headerContainer}>
@@ -32,22 +28,7 @@ const Header = () => {
       </ul>
 
 
-        <ul className={iconNavLinks}>
-          <li className="">
-            <Search className="" />
-          </li>
-          <li className="">
-            <Wishlist className="" />
-          </li>
-          <li onClick={()=>navigate("cart")} className="">
-          
-          <Cart  className="" />          
-          
-          </li>
-          <li className="">
-            <User className="" />
-          </li>
-        </ul>
+       <IconLinks/>
   
       {/* //mobileNaveLInk */}
       <ul className={navLinksMobile}>

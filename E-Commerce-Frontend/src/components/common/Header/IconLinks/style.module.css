@@ -1,0 +1,34 @@
+.iconNavLinks {
+    @apply flex justify-center items-center space-x-1;
+  }
+  
+  .iconNavLinks li {
+    @apply cursor-pointer px-1 py-0.5 relative;
+  }
+  
+  .iconNavLinks li > svg {
+    @apply w-5 h-5 font-bold;
+  }
+
+  .counter {
+    @apply absolute bg-[var(--bg-secondary)] border-white border  text-white z-50 -top-2 -right-1 w-4 h-4 p-0.5 flex justify-center items-center rounded-full text-[10px]
+  }
+
+  .counterWithAnimation{
+    @apply absolute bg-[var(--bg-secondary)] border-white border animate-[counterAnimation_0.6s_infinite]  text-white z-50 -top-2 p-0.5 -right-1 w-4 h-4 flex justify-center items-center rounded-full text-[10px]
+  }
+
+
+
+  @keyframes counterAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+  }

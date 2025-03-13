@@ -5,9 +5,8 @@ import { useEffect,useMemo } from "react"
 import { useParams } from "react-router"
 
 const useProducts = () => {
-    console.log("render")
   const dispatch= useAppDispatch()
-  const {productsFullInfo}=useAppSelector(state=>state.product)
+  const {productsFullInfo,loading}=useAppSelector(state=>state.product)
   const params = useParams()
 
 
@@ -57,7 +56,9 @@ const useProducts = () => {
   
     return {productsCategory,
         productsMatrial,
-        productList}
+        productList,
+      loading
+      }
 }
 
 export default useProducts

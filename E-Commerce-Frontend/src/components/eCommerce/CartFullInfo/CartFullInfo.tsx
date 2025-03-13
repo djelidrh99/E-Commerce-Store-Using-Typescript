@@ -14,13 +14,15 @@ type CartItemProps = {
     removeProductFromCart: (id: number) => void;
     incrementQuantity: (id: number) => void;
     decrementQuantity: (id: number) => void;
+    totalPrice:number
+    
   };
 
-const CartFullInfo = ({ items,removeProductFromCart ,incrementQuantity,decrementQuantity }: CartItemComponentProps) => {
+const CartFullInfo = ({ items,removeProductFromCart ,incrementQuantity,decrementQuantity,totalPrice }: CartItemComponentProps) => {
   return (
-    <div className="flex  gap-5">
+    <div className="flex md:flex-nowrap flex-wrap  gap-5">
         <CartItem items={items} removeProductFromCart={removeProductFromCart} incrementQuantity={incrementQuantity} decrementQuantity={decrementQuantity}/>
-        <CartSubTotal/>
+        <CartSubTotal totalPrice={totalPrice}/>
     </div>
   )
 }

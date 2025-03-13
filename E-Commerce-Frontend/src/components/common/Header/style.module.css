@@ -23,16 +23,6 @@
 }
 
 
-.iconNavLinks {
-  @apply flex justify-center items-center space-x-1;
-}
 
-.iconNavLinks li {
-  @apply cursor-pointer px-1 py-0.5;
-}
-
-.iconNavLinks li > svg {
-  @apply w-5 h-5 font-bold;
-}
 
 
