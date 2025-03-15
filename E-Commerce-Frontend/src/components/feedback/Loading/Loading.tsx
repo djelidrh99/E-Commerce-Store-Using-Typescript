@@ -1,11 +1,13 @@
 import { TLoading } from "@/types/loadingType";
 import CategoriesSkeleton from "@components/feedback/Skeleton/CategoriesSkeleton";
 import ProductsSkeleton from "@components/feedback/Skeleton/ProductsSkeleton";
+import CartSkeleton from "@components/feedback/Skeleton/CartSkeleton";
 
 
 const skeletonObject ={
     categories: CategoriesSkeleton,
-    products:ProductsSkeleton 
+    products:ProductsSkeleton ,
+    cart:CartSkeleton
 }
 
 type TLoadingProps={

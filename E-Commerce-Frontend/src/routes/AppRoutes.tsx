@@ -8,6 +8,7 @@ const ContactUs = lazy(() => import("@pages/ContactUs"));
 const Error = lazy(() => import("@pages/Error"));
 const ProductsDetail = lazy(() => import("@/pages/ProductsDetail"));
 const Cart = lazy(() => import("@/pages/Cart"));
+const Wishlist = lazy(() => import("@/pages/Wishlist"));
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "categories",
         element: (
-          <Suspense>
+          <Suspense >
             <Categories />
           </Suspense>
         ),
@@ -54,6 +55,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense>
             <Cart />
+          </Suspense>
+        ),
+      },
+      {
+        path: "wishlist",
+        element: (
+          <Suspense>
+            <Wishlist />
           </Suspense>
         ),
       },

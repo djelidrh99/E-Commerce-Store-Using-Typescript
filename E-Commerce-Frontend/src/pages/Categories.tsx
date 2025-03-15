@@ -1,7 +1,7 @@
 import GridList from "@/components/common/GridList/GridList";
 import Heading from "@/components/common/Heading/Heading";
 import Categorie from "@/components/eCommerce/Categorie/Categorie";
-import Loading from "@/components/feedback/Cursor/Loading/Loading";
+import Loading from "@/components/feedback/Loading/Loading";
 import { categoriesCleanUp } from "@/store/CategoriesSlice/CategoriesSlice";
 import { getCategoriesThunk } from "@/store/CategoriesSlice/thunk/getCategoriesThunk";
 import { useAppDispatch, useAppSelector } from "@/store/Hooks/hooks";

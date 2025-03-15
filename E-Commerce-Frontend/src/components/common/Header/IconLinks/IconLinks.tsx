@@ -40,7 +40,7 @@ const IconLinks = () => {
     <li className="">
       <Search className="" />
     </li>
-    <li className="">
+    <li onClick={()=>navigate("wishlist")} className="">
       <Wishlist className="" />
     </li>
     <li onClick={()=>navigate("cart")} className="">
