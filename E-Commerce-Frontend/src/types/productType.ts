@@ -8,5 +8,6 @@ export type TProduct = {
     img_group?: string[];
     matrial?:string;
     max?:number;
-    categoryTitle?:string
+    categoryTitle?:string;
+    isWishList?: boolean
 }

@@ -10,7 +10,7 @@ import {
 
 const useCart = () => {
   const dispatch = useAppDispatch();
-  const { loading, cartProductFullInfo, itemId } = useAppSelector(
+  const { loading, cartProductFullInfo, itemId,error } = useAppSelector(
     (state) => state.cart
   );
 
@@ -64,7 +64,8 @@ const useCart = () => {
     removeProductFromCart,
     incrementQuantityFromCart,
     decrementQuantityFromCart,
-    cartTotalPrice
+    cartTotalPrice,
+    error
   };
 };
 

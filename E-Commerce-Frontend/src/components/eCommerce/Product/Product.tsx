@@ -1,5 +1,6 @@
 import Cart from "@assets/svg/cartAdd.svg?react";
-import Like from "@assets/svg/like.svg?react";
+import Like from "@assets/svg/heart.svg?react";
+import HeartFill from "@assets/svg/heartfilled.svg?react";
 import style from "./style.module.css";
 import { TProduct } from "@/types/productType";
 import { motion } from "framer-motion";
@@ -7,6 +8,7 @@ import { useAppDispatch } from "@/store/Hooks/hooks";
 import { addProduct } from "@/store/Cart/cartSlice";
 import { useEffect, useState } from "react";
 import { Spinner } from "@chakra-ui/react";
+import { addToWishlistThunk } from "@/store/Wishlist/thunk/addToWishlistThunk";
 
 const {
   productContainer,
@@ -17,18 +19,18 @@ const {
   soldBox,
 } = style;
 
-const Product = ({ id, img, title, price }: TProduct) => {
+const Product = ({ id, img, title, price,isWishList }: TProduct) => {
   const dispatch = useAppDispatch();
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-   const loadingTimeout = setTimeout(() => {
+    const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
     }, 300);
 
-    return()=>{
-      clearTimeout(loadingTimeout)
-    }
+    return () => {
+      clearTimeout(loadingTimeout);
+    };
   }, [isLoading]);
 
   const addProductToCart = (id: number) => {
@@ -38,6 +40,11 @@ const Product = ({ id, img, title, price }: TProduct) => {
     }
     dispatch(addProduct(id));
   };
+
+  const addProductToWishlist = (id: number) => {
+    dispatch(addToWishlistThunk(id));
+  };
+
   return (
     <motion.div
       className={productContainer}
@@ -79,8 +86,18 @@ const Product = ({ id, img, title, price }: TProduct) => {
           )}
         </div>
       </div>
-      <div className={likeBox}>
-        <Like className="w-5 h-5 sm:w-6 sm:h-6" />
+      <div
+        onClick={() => {
+          addProductToWishlist(id);
+        }}
+        className={likeBox}
+      >
+        {isWishList ? (
+          <HeartFill className="w-5 h-5 sm:w-6 sm:h-6" />
+        ) : (
+          <Like className="w-5 h-5 sm:w-6 sm:h-6" />
+        )}
+       
       </div>
       <div className={soldBox}>
         <span>20%</span>

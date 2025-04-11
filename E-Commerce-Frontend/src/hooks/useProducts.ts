@@ -1,12 +1,13 @@
 import { useAppDispatch, useAppSelector } from "@/store/Hooks/hooks"
 import { productsCleanUp } from "@/store/Product/productSlice"
 import { getProductThunk } from "@/store/Product/thunk/getProductThunk"
-import { useEffect,useMemo } from "react"
+import { use, useEffect,useMemo } from "react"
 import { useParams } from "react-router"
 
 const useProducts = () => {
   const dispatch= useAppDispatch()
   const {productsFullInfo,loading}=useAppSelector(state=>state.product)
+  const {itemId}=useAppSelector(state=>state.wishlist)
   const params = useParams()
 
 
@@ -52,11 +53,19 @@ const useProducts = () => {
   } else if(params.prefixId!=="all" ) {
     productList = productByCategories
   }
+
+  const productsFullArray = productList.map((item) => {
+    if (itemId.includes(item.id)) {
+      return { ...item, isWishList: true };
+    }
+      return { ...item, isWishList: false }; ;
+    
+  })
   
   
     return {productsCategory,
         productsMatrial,
-        productList,
+        productsFullArray,
       loading
       }
 }

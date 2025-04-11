@@ -7,9 +7,9 @@ import useProducts from "@/hooks/useProducts";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Products = () => {
-  const { productList, productsCategory, productsMatrial, loading } =
+  const { productsFullArray, productsCategory, productsMatrial, loading } =
     useProducts();
-
+    console.log(productsFullArray);
   return (
     <div>
       <Heading title={"Products"} />
@@ -26,7 +26,7 @@ const Products = () => {
             >
               <AnimatePresence>
                 <GridList
-                  itemArray={productList}
+                  itemArray={productsFullArray}
                   callBackFunc={(item) => (
                     <Product
                       key={item.id}
@@ -35,6 +35,7 @@ const Products = () => {
                       price={item.price}
                       img={item.img}
                       cat_prefix={item.cat_prefix}
+                      isWishList={item.isWishList}
                     />
                   )}
                 />

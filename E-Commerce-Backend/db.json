@@ -81,7 +81,7 @@
       "categoryTitle": "Living Room",
       "title": "Karl T. Swivel Chair",
       "price": "445.00",
-      "description":"The cosy Karl T. Swivel Chair is the perfect addition to a bedroom, living room or study area. Create a luxe seating spot with this comfortable, stylish bouclé chair.",
+      "description": "The cosy Karl T. Swivel Chair is the perfect addition to a bedroom, living room or study area. Create a luxe seating spot with this comfortable, stylish bouclé chair.",
       "cat_prefix": "livingroom",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-1-1000x1000-removebg-preview.png",
       "img_group": [
@@ -90,9 +90,8 @@
         "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-3-scaled-600x600-removebg-preview.png",
         "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-6-scaled-removebg-preview.png",
         "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-7-scaled-removebg-preview.png"
-
       ],
-      "matrial":"wood",
+      "matrial": "wood",
       "max": 4
     },
     {
@@ -100,16 +99,16 @@
       "categoryTitle": "Living Room",
       "title": "Sogon Accent Table",
       "price": "350.00",
-      "description":"Constructed from a blend of iron, marble, and wood, this accent table combines the durability of iron with the natural beauty of wood for a sleek design. It boasts a sophisticated oiled black finish, complemented by an ivory color base, adding a touch of modern elegance to any space.The notable features of this wood accent table include its round shape, sleek matte finish, and eye-catching ivory marble base which combine functionality with aesthetic appeal.",
+      "description": "Constructed from a blend of iron, marble, and wood, this accent table combines the durability of iron with the natural beauty of wood for a sleek design. It boasts a sophisticated oiled black finish, complemented by an ivory color base, adding a touch of modern elegance to any space.The notable features of this wood accent table include its round shape, sleek matte finish, and eye-catching ivory marble base which combine functionality with aesthetic appeal.",
       "cat_prefix": "livingroom",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/table-1.png",
       "img_group": [
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/table-1.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-2-1-removebg-preview.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-3-scaled-600x600-removebg-preview.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/table-2.png"
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/table-1.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-2-1-removebg-preview.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Karl-T-Swivel-Chair-3-scaled-600x600-removebg-preview.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/table-2.png"
       ],
-      "matrial":"wood",
+      "matrial": "wood",
       "max": 4
     },
     {
@@ -117,14 +116,14 @@
       "categoryTitle": "Decor",
       "title": "Dried Plant Oval Wall Mirror",
       "price": "225.00",
-      "description":"Designed with timeless sophistication, rich old-world textures and warm hues come together for a refined classic taste of luxury. This wall mirror is uniquely constructed from pampas grass and mirror, combining natural elements with reflective beauty. The oval hanging wall mirror showcases a textured warm brown pampas grass frame.",
+      "description": "Designed with timeless sophistication, rich old-world textures and warm hues come together for a refined classic taste of luxury. This wall mirror is uniquely constructed from pampas grass and mirror, combining natural elements with reflective beauty. The oval hanging wall mirror showcases a textured warm brown pampas grass frame.",
       "cat_prefix": "decor",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/mirror.png",
       "img_group": [
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/mirror.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/mirror-2.png"
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/mirror.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/mirror-2.png"
       ],
-      "matrial":"plant",
+      "matrial": "plant",
       "max": 4
     },
     {
@@ -132,14 +131,14 @@
       "categoryTitle": "Lighting",
       "title": "Driftwood Metal Table Lamp",
       "price": "125.00",
-      "description":"Surprise your guests with this striking table lamp that serves both decorative and functional purposes. Ideal to place on any rustic-styled accent table in your lobby, living room, library, kitchen or bedroom.",
+      "description": "Surprise your guests with this striking table lamp that serves both decorative and functional purposes. Ideal to place on any rustic-styled accent table in your lobby, living room, library, kitchen or bedroom.",
       "cat_prefix": "lighting",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/lighting.png",
       "img_group": [
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/lighting.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/lighting-2.png"
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/lighting.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/lighting-2.png"
       ],
-      "matrial":"metal",
+      "matrial": "metal",
       "max": 4
     },
     {
@@ -147,15 +146,15 @@
       "categoryTitle": "Bed Room",
       "title": "Murano Panel Bed",
       "price": "1255.00",
-      "description":"Ginger and Brun Boucle",
+      "description": "Ginger and Brun Boucle",
       "cat_prefix": "bedroom",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed.png",
       "img_group": [
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed-2.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed-3.png"
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed-2.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Panelbed-3.png"
       ],
-      "matrial":"wood",
+      "matrial": "wood",
       "max": 4
     },
     {
@@ -163,109 +162,19 @@
       "categoryTitle": "Dining Room",
       "title": "Brocco Banquette",
       "price": "850.00",
-      "description":"The Brocco Banquette is a study of mixed materials and textures. The oak wood frame beautifully complements the paper rope weaving on the backrest. With comfortable seating upholstered in our millken cognac faux leather, this banquette will go well in any space. Handle With Care: This design has been crafted with faux leather. Faux leather is manufactured to reflect the natural characteristics of leather; as such, colour variations, markings, wrinkles, grooves, and light scratches are appreciated characteristics. No two pieces will be alike.",
+      "description": "The Brocco Banquette is a study of mixed materials and textures. The oak wood frame beautifully complements the paper rope weaving on the backrest. With comfortable seating upholstered in our millken cognac faux leather, this banquette will go well in any space. Handle With Care: This design has been crafted with faux leather. Faux leather is manufactured to reflect the natural characteristics of leather; as such, colour variations, markings, wrinkles, grooves, and light scratches are appreciated characteristics. No two pieces will be alike.",
       "cat_prefix": "diningroom",
       "img": "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette.png",
       "img_group": [
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette-2.png",
-      "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette-3.png"
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette-2.png",
+        "https://raw.githubusercontent.com/djelidrh99/E-Commerce-Store-Using-Typescript/refs/heads/main/E-Commerce-Frontend/src/assets/product/Banquette-3.png"
       ],
-      "matrial":"wood",
+      "matrial": "wood",
       "max": 4
     }
   ],
-
-
-
-
-
-
-
-  "wishlist": [
-    {
-      "userId": 6,
-      "productId": 1,
-      "id": 3
-    },
-    {
-      "productId": 1,
-      "id": 4
-    },
-    {
-      "productId": 1,
-      "id": 5
-    },
-    {
-      "productId": 1,
-      "id": 6
-    },
-    {
-      "productId": 1,
-      "id": 7
-    },
-    {
-      "productId": 1,
-      "id": 8
-    },
-    {
-      "productId": 2,
-      "id": 9
-    },
-    {
-      "productId": 2,
-      "id": 10
-    },
-    {
-      "productId": 2,
-      "id": 11
-    },
-    {
-      "productId": 1,
-      "id": 12
-    },
-    {
-      "productId": 1,
-      "id": 13
-    },
-    {
-      "productId": 1,
-      "id": 14
-    },
-    {
-      "productId": 1,
-      "id": 15
-    },
-    {
-      "productId": 1,
-      "id": 16
-    },
-    {
-      "userId": 1,
-      "productId": 4,
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "productId": 3,
-      "id": 18
-    },
-    {
-      "userId": 1,
-      "productId": 2,
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "id": 20
-    },
-    {
-      "userId": 1,
-      "productId": 5,
-      "id": 21
-    }
-  ],
+  "wishlist": [],
   "orders": [
     {
       "userId": 1,

@@ -2,6 +2,7 @@ import { TLoading } from "@/types/loadingType";
 import CategoriesSkeleton from "@components/feedback/Skeleton/CategoriesSkeleton";
 import ProductsSkeleton from "@components/feedback/Skeleton/ProductsSkeleton";
 import CartSkeleton from "@components/feedback/Skeleton/CartSkeleton";
+import LottieHandler from "../LottierHandler/LottierHandler";
 
 
 const skeletonObject ={
@@ -32,9 +33,7 @@ if(loading==="pending") {
 
 if(loading==="failed" ) {
     return (
-    <>
-    error
-    </>
+    <LottieHandler type="error" message={error as string}/>
     )
 }
 
