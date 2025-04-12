@@ -1,3 +1,4 @@
+import isAxiosErrorHandler from "@/util/isAxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, {  isAxiosError } from "axios";
 
@@ -16,11 +17,7 @@ export const getProductThunk=createAsyncThunk(
 
             
         } catch (error) {
-            if (isAxiosError(error)) {
-                    return rejectWithValue(error.response?.data || error.message);
-                  } else {
-                    return rejectWithValue(("failed to conection"));
-                  }
+                return rejectWithValue(isAxiosErrorHandler(error))
         }
 
 

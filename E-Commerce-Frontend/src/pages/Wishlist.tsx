@@ -13,13 +13,13 @@ const Wishlist = () => {
     
    
   return (
-<div>
+<>
       <Heading title={"Wishlist"} />
-      <div className="bg-white ">
+      <div className="bg-white flex-1 ">
         <Loading loading={loading} type="products" error={error}>
 
         {wishlistProducts.length === 0 ? <LottieHandler type="empty" message="Your wishlist is empty"/> : 
-        <div className="container  grid grid-cols-2  md:grid-cols-3 gap-4 py-10 mx-auto max-lg:px-2 lg:px-10">
+        <div className="container   grid grid-cols-2  md:grid-cols-3 gap-4 py-10 mx-auto max-lg:px-2 lg:px-10">
             
         <GridList
         itemArray={wishlistProducts}
@@ -42,7 +42,7 @@ const Wishlist = () => {
           
             </Loading>  
             </div>  
-            </div>  
+            </>  
 
             )
 }

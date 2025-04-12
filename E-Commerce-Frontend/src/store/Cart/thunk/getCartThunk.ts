@@ -1,4 +1,5 @@
 import { RootState } from "@/store/store";
+import isAxiosErrorHandler from "@/util/isAxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { isAxiosError } from "axios";
 
@@ -18,11 +19,7 @@ export const getCartThunk = createAsyncThunk("cart/getCart", async (_,thunkApi) 
         return responsee.data
         
     } catch (error) {
-            if (isAxiosError(error)) {
-                return rejectWithValue(error.response?.data || error.message);
-              } else {
-                return rejectWithValue(("failed to conection"));
-              }
+           return rejectWithValue(isAxiosErrorHandler(error))
         
     }
 

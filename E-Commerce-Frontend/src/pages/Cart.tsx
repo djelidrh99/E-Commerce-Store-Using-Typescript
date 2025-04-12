@@ -16,9 +16,9 @@ const Cart = () => {
   } = useCart();
 
   return (
-    <div className="  ">
+    <>
       <Heading title={"Cart"} />
-      <div className="bg-white">
+      <div className="bg-white flex-1">
         <Loading loading={loading} error={error} type={"cart"} >
           <div className="container  grid grid-cols-1 text-red-500   py-10 mx-auto max-lg:px-2 lg:px-10">
             {cartProduct.length === 0 ? <LottieHandler type="empty" message="your cart is empty"/> : 
@@ -35,7 +35,7 @@ const Cart = () => {
           </div>
         </Loading>
       </div>
-    </div>
+    </>
   );
 };
 

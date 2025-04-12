@@ -8,10 +8,10 @@ const MainLayout = () => {
       <header className="w-full left-0 top-0 mx-auto z-50 shadow-md sticky bg-[var(--bg-primary)]">
         <Header />
       </header>
-      <div className="flex-1  ">
+      <div className="flex-1  flex flex-col  ">
         <Outlet />
       </div>{" "}
-      <div className="bg-white">
+      <div className="bg-white border border-red-600">
         <div className="container mx-auto max-lg:px-2 lg:px-10">
         footer
         </div>

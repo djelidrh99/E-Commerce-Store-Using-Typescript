@@ -1,4 +1,5 @@
 import { TCategories } from "@/types/categoriesType";
+import isAxiosErrorHandler from "@/util/isAxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios, { isAxiosError } from "axios";
 export const getCategoriesThunk = createAsyncThunk(
@@ -10,11 +11,7 @@ export const getCategoriesThunk = createAsyncThunk(
       const response = await axios.get<TCategories[]>("/categories",{signal});
       return response.data;
     } catch (error) {
-      if (isAxiosError(error)) {
-        return rejectWithValue(error.response?.data || error.message);
-      } else {
-        return rejectWithValue(("failed to conection"));
-      }
+      return rejectWithValue(isAxiosErrorHandler(error))
     }
   }
 );

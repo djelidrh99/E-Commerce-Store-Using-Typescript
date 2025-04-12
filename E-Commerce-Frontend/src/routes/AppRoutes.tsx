@@ -1,3 +1,4 @@
+import SuspenseLoadinsg from "@/components/feedback/Suspense/SuspenseLoadinsg";
 import MainLayout from "@layouts/MainLayout/MainLayout";
 import { lazy, Suspense } from "react";
 const Home = lazy(() => import("@pages/Home"));
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <Home />
           </Suspense>
         ),
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "aboutUs",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <AboutUs />
           </Suspense>
         ),
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       {
         path: "contactUs",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <ContactUs />
           </Suspense>
         ),
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <Cart />
           </Suspense>
         ),
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
       {
         path: "wishlist",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <Wishlist />
           </Suspense>
         ),
@@ -70,7 +71,7 @@ const router = createBrowserRouter([
       {
         path: "products/:prefixId",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <Products />
           </Suspense>
         ),
@@ -85,7 +86,7 @@ const router = createBrowserRouter([
       {
         path: "productDetails",
         element: (
-          <Suspense>
+          <Suspense fallback={<SuspenseLoadinsg/>}>
             <ProductsDetail />
           </Suspense>
         ),
