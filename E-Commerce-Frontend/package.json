@@ -12,6 +12,7 @@
   "dependencies": {
     "@chakra-ui/react": "^3.8.0",
     "@emotion/react": "^11.14.0",
+    "@hookform/resolvers": "^5.0.1",
     "@reduxjs/toolkit": "^2.5.1",
     "@types/node": "^22.13.1",
     "@types/swiper": "^5.4.3",

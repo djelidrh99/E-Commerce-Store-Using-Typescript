@@ -10,6 +10,8 @@ const Error = lazy(() => import("@pages/Error"));
 const ProductsDetail = lazy(() => import("@/pages/ProductsDetail"));
 const Cart = lazy(() => import("@/pages/Cart"));
 const Wishlist = lazy(() => import("@/pages/Wishlist"));
+const Register = lazy(() => import("@/pages/Register"));
+const Login = lazy(() => import("@/pages/Login"));
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -48,6 +50,22 @@ const router = createBrowserRouter([
         element: (
           <Suspense >
             <Categories />
+          </Suspense>
+        ),
+      },
+      {
+        path: "register",
+        element: (
+          <Suspense >
+            <Register />
+          </Suspense>
+        ),
+      },
+      {
+        path: "login",
+        element: (
+          <Suspense >
+            <Login />
           </Suspense>
         ),
       },

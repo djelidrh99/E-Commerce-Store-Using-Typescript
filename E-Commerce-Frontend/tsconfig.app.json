@@ -33,7 +33,8 @@
       "@store/*": ["src/store/*"],
       "@util/*": ["src/util/*"],
       "@styles/*": ["src/styles/*"],
-      "@types/*": ["src/types/*"]
+      "@types/*": ["src/types/*"],
+      "@validation/*": ["src/validation/*"],
     },
 
     /* Linting */

@@ -1,6 +1,6 @@
 import isAxiosErrorHandler from "@/util/isAxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios, {  isAxiosError } from "axios";
+import axios from "axios";
 
 export const getProductThunk=createAsyncThunk(
     "product/getProductThunk",async (_,thunkApi)=>{
