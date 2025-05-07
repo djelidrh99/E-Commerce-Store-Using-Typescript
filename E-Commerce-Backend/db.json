@@ -41,6 +41,24 @@
       "firstName": "dj",
       "lastName": "dd",
       "id": 6
+    },
+    {
+      "email": "hamid@gmail.com",
+      "password": "$2a$10$rSbhMfx9S7tDmYoPLqwF3e16FOQQZjifQC6IjmowKEkDE6XLBV7fW",
+      "name": "hamid",
+      "id": 7
+    },
+    {
+      "email": "abcd@gmail.com",
+      "password": "$2a$10$f/XewhbyZwENt.ZCP7sVKeh1UtWumbqa0MJrt1ho3wipXedVsZpF.",
+      "name": "djelid",
+      "id": 8
+    },
+    {
+      "email": "abcde@gmail.com",
+      "password": "$2a$10$dg73j4rkcj5fki9OjUmX0.o3uIndwIcYGo/M3yt6mQkENjSgm1KP.",
+      "name": "djelid",
+      "id": 9
     }
   ],
   "categories": [

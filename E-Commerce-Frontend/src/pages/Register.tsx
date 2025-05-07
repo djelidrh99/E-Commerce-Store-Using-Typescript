@@ -9,9 +9,12 @@ import useRegister from "@/hooks/useRegister";
 
 
 
+
 const Register = () => {
 
   const {emailBlurHandler,emailStatusAvailibility,errors, onSubmit,register,handleSubmit} = useRegister()
+
+
 
 
 

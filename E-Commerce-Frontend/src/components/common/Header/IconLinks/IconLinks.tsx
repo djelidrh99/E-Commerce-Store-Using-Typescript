@@ -49,7 +49,7 @@ const IconLinks = () => {
     <span className={isAnimate ? counterWithAnimation : counter} >{counterCart}</span>        
     
     </li>
-    <li className="">
+    <li  onClick={()=>navigate("login")} className="">
       <User className="" />
     </li>
   </ul>  )

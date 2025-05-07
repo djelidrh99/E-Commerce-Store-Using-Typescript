@@ -12,6 +12,7 @@ const Cart = lazy(() => import("@/pages/Cart"));
 const Wishlist = lazy(() => import("@/pages/Wishlist"));
 const Register = lazy(() => import("@/pages/Register"));
 const Login = lazy(() => import("@/pages/Login"));
+import ProtectedComponent from "@/components/auth/ProtectedComponent";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -81,7 +82,9 @@ const router = createBrowserRouter([
         path: "wishlist",
         element: (
           <Suspense fallback={<SuspenseLoadinsg/>}>
+            <ProtectedComponent>
             <Wishlist />
+            </ProtectedComponent>
           </Suspense>
         ),
       },
@@ -105,7 +108,9 @@ const router = createBrowserRouter([
         path: "productDetails",
         element: (
           <Suspense fallback={<SuspenseLoadinsg/>}>
+            <ProtectedComponent>
             <ProductsDetail />
+            </ProtectedComponent>
           </Suspense>
         ),
       },
