@@ -14,8 +14,10 @@ import { resetUi } from "@/store/Auth/AuthSlice";
 const useLogin = () => {
    const dispatch = useAppDispatch() 
    const navigate = useNavigate() 
-   const {loading,error} =useAppSelector((state) => state.auth);
+   const {accessToken,loading,error} =useAppSelector((state) => state.auth);
    const [searchParams,setSearchParams] = useSearchParams();
+
+  
 
 
 
@@ -48,7 +50,8 @@ const useLogin = () => {
     onSubmit,
     searchParams,
     loading,
-    error
+    error,
+    accessToken
   }
 }
 

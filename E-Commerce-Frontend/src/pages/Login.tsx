@@ -4,12 +4,18 @@ import Inputs from "@/components/forms/Inputs";
 import useLogin from "@/hooks/useLogin";
 import { NavLink } from "react-router-dom";
 import { Spinner } from "@chakra-ui/react";
+import { Navigate } from "react-router-dom";
 
 
 const Login = () => {
-  const { errors, handleSubmit, onSubmit, register,loading,searchParams,error } = useLogin();
+  const { errors, handleSubmit, onSubmit, register,loading,searchParams,error,accessToken } = useLogin();
   
-  console.log(searchParams.get("message"));
+  if (accessToken) {
+    return  <Navigate to={"/"} />
+}
+
+
+  
 
   return (
     <>
@@ -62,7 +68,7 @@ const Login = () => {
         </Button>
         <p className="text-sm text-gray-500">
           Don't have an account?{" "}
-          <NavLink to={"register"} className="text-[var(--bg-secondary)]">
+          <NavLink to={"/register"} className="text-[var(--bg-secondary)]">
             Register
           </NavLink>
         </p>

@@ -1,27 +1,36 @@
 import isAxiosErrorHandler from "@/util/isAxiosError";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios, { isAxiosError } from "axios";
+import axios from "axios";
+import {RootState} from "@/store/store";
 
 type TFetchwishlist = "productFullInfo" | "itemId";
 
 export const getWishlistThunk = createAsyncThunk(
   "wishlist/getWishlist",
   async (dataType: TFetchwishlist, thunkApi) => {
-    const { rejectWithValue, signal } = thunkApi;
+    const { rejectWithValue, signal ,getState} = thunkApi;
+        const { auth } = getState() as RootState;
+    
     try {
-      console.log("getWishlistThunk");
-      const isProductexist = await axios.get(`/wishlist`);
+      const isProductexist = await axios.get(`/wishlist?userId=${auth.user?.id}`);
+      
       if (isProductexist.data.length === 0) {
         return { type: "productFullInfo", productFullInfo: [] };
       }
 
+     
+
       const itemId = isProductexist.data.map(
-        (item: { productId: number }) => item.productId
+        (item: { productId: number,userId:number }) => item.productId
       );
+
+      console.log(itemId);
+
       const idListTostring = itemId
         .map((item: number) => `id=${item}&`)
         .join("");
-      console.log(idListTostring);
+
+
       if (dataType === "itemId") {
         return { type: "itemId", idList: itemId };
       } else if (dataType === "productFullInfo") {

@@ -15,19 +15,22 @@ const itemIdCart = {
   whitelist: ['itemId']
 }
 
-const itemIdWishlist = {
-  key: 'wishlist',
+const authLogin = {
+  key: 'auth',
   storage: storage,
-  whitelist: ['itemId']
+  whitelist: ['user','accessToken']
 }
+
+
+
 
 
 const rootReducer = combineReducers({
   categories:categories,
     product:product,
-    auth:auth,
+    auth:persistReducer(authLogin,auth),
     cart:persistReducer(itemIdCart,cart),
-    wishlist:persistReducer(itemIdWishlist,wishlist)
+    wishlist
 })
 
 

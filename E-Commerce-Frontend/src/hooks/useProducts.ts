@@ -1,7 +1,8 @@
 import { useAppDispatch, useAppSelector } from "@/store/Hooks/hooks"
 import { productsCleanUp } from "@/store/Product/productSlice"
 import { getProductThunk } from "@/store/Product/thunk/getProductThunk"
-import { use, useEffect,useMemo } from "react"
+import { getWishlistThunk } from "@/store/Wishlist/thunk/getWishlist"
+import {  useEffect,useMemo } from "react"
 import { useParams } from "react-router"
 
 const useProducts = () => {
@@ -13,6 +14,7 @@ const useProducts = () => {
 
   useEffect(()=>{
    const promise = dispatch(getProductThunk())
+   dispatch(getWishlistThunk("itemId"))
    return ()=>{
     promise.abort()
     dispatch(productsCleanUp())

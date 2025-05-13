@@ -2,6 +2,9 @@ import Heading from "@/components/common/Heading/Heading"
 import { Button } from "@chakra-ui/react"
 import Inputs from "@/components/forms/Inputs";
 import useRegister from "@/hooks/useRegister";
+import { NavLink } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+
 
 
 
@@ -12,8 +15,10 @@ import useRegister from "@/hooks/useRegister";
 
 const Register = () => {
 
-  const {emailBlurHandler,emailStatusAvailibility,errors, onSubmit,register,handleSubmit} = useRegister()
-
+  const {emailBlurHandler,emailStatusAvailibility,errors, onSubmit,register,handleSubmit,accessToken} = useRegister()
+  if (accessToken) {
+    return  <Navigate to={"/"} />
+}
 
 
 
@@ -34,6 +39,12 @@ const Register = () => {
     <Inputs label="Password" name="password" register={register} error={errors.password?.message as string} type="password"/>
     <Inputs label="Confirm Password" name="confirmPassword" register={register} error={errors.confirmPassword?.message as string} type="password"/>
     <Button type="submit" className="bg-[var(--bg-secondary)] w-1/2">Sign Up</Button>
+      <p className="text-sm text-gray-500">
+              Aleardy have an account?{" "}
+              <NavLink to={"/login"} className="text-[var(--bg-secondary)]">
+                Login
+              </NavLink>
+            </p>
     
         
     </form>

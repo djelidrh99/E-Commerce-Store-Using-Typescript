@@ -192,7 +192,33 @@
       "max": 4
     }
   ],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "productId": 1,
+      "userId": 9,
+      "id": 3
+    },
+    {
+      "productId": 3,
+      "userId": 7,
+      "id": 4
+    },
+    {
+      "productId": 4,
+      "userId": 7,
+      "id": 5
+    },
+    {
+      "productId": 5,
+      "userId": 9,
+      "id": 6
+    },
+    {
+      "productId": 6,
+      "userId": 9,
+      "id": 7
+    }
+  ],
   "orders": [
     {
       "userId": 1,

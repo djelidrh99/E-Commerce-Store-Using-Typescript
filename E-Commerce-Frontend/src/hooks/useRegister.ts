@@ -2,7 +2,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { registerSchema, registerType } from "@/validation/registerSchema";
 import useCheckEmailAvailibilty from "@/hooks/useCheckEmailAvailibilty";
-import { useAppDispatch } from "@/store/Hooks/hooks";
+import { useAppDispatch, useAppSelector } from "@/store/Hooks/hooks";
 import { registerUser } from "@/store/Auth/AuthThunk/authThunk";
 import { useNavigate } from "react-router-dom";
 import { resetUi } from "@/store/Auth/AuthSlice";
@@ -11,6 +11,8 @@ import { useEffect } from "react";
 const useRegister = () => {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
+  const {accessToken} =useAppSelector((state) => state.auth);
+  
   const {
     register,
     handleSubmit,
@@ -61,6 +63,7 @@ useEffect(()=>{
     emailBlurHandler,
     emailStatusAvailibility,
     handleSubmit,
+    accessToken
   };
 };
 
