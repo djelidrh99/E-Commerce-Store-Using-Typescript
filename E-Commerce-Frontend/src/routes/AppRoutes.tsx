@@ -105,12 +105,11 @@ const router = createBrowserRouter([
         }
       },
       {
-        path: "productDetails",
+        path: "productDetails/:Id",
         element: (
           <Suspense fallback={<SuspenseLoadinsg/>}>
-            <ProtectedComponent>
             <ProductsDetail />
-            </ProtectedComponent>
+           
           </Suspense>
         ),
       },

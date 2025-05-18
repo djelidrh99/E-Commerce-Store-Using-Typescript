@@ -9,6 +9,7 @@ import { addProduct } from "@/store/Cart/cartSlice";
 import { useEffect, useState } from "react";
 import { Spinner } from "@chakra-ui/react";
 import { addToWishlistThunk } from "@/store/Wishlist/thunk/addToWishlistThunk";
+import { useNavigate } from "react-router-dom";
 
 const {
   productContainer,
@@ -22,6 +23,7 @@ const {
 const Product = ({ id, img, title, price,isWishList }: TProduct) => {
   const dispatch = useAppDispatch();
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const loadingTimeout = setTimeout(() => {
@@ -45,6 +47,10 @@ const Product = ({ id, img, title, price,isWishList }: TProduct) => {
     dispatch(addToWishlistThunk(id));
   };
 
+  const productDetails = (id:number)=> {
+    navigate(`/productDetails/${id}`);
+  }
+
   return (
     <motion.div
       className={productContainer}
@@ -54,7 +60,7 @@ const Product = ({ id, img, title, price,isWishList }: TProduct) => {
       exit={{ opacity: 0 }}
     >
       <div className={imgContainer}>
-        <img className="h-full w-full object-cover" src={img} alt={title} />
+        <img onClick={()=>{productDetails(id)}} className="h-full w-full object-cover cursor-pointer" src={img} alt={title} />
       </div>
       <div className={informationBox}>
         <div>
