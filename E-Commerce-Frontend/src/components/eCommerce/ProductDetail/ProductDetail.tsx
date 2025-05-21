@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 import { Button } from "@chakra-ui/react";
 import Like from "@assets/svg/heart.svg?react";
 import Share from "@assets/svg/share.svg?react";
+import "./activeSlick.css"
 
 const { productDetailsContainer } = styles;
 
@@ -22,11 +23,12 @@ const ProductDetail = ({ imgGroup }: TProductDetailProps) => {
       );
     },
     dots: true,
-    dotsClass: "slick-dots slick-thumb",
+    dotsClass: "slick-dots slick-thumb ",
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
   };
 
   return (
@@ -41,15 +43,21 @@ const ProductDetail = ({ imgGroup }: TProductDetailProps) => {
         </Slider>
       </div>
       <div className="flex flex-col  text-black">
-        <h3 className="flex-1 text-[var(--text-secondary)]">Title</h3>
         <div className="flex-1">
-          <h5>
-            130$ <span>150$</span>{" "}
+        <h3 className=" font-semibold  text-[var(--text-secondary)]">Title</h3>
+          <h5 className="text-[var(--text-secondary)] max-w-96 mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatibus.
           </h5>
-          <h5>
+        </div>
+        <div className="flex-1">
+          <h5 className="text-black font-bold">
+            130$ <span className=" text-[var(--text-secondary)]">150$</span>{" "}
+          </h5>
+          <h5 className=" text-[var(--text-secondary)] mt-2">
             Product Code : 546545 <span>In stock</span>
           </h5>
-          <h5>
+          <h5 className=" text-[var(--text-secondary)] mt-2">
             Review <span>140 reviews</span> | <span>545 sold</span>
           </h5>
          
@@ -59,13 +67,13 @@ const ProductDetail = ({ imgGroup }: TProductDetailProps) => {
             <button className="text-black/60 w-6 h-6 cursor-pointer   md:w-9 md:h-9  flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">
               -
             </button>
-            <span className="flex-grow text-center ">1</span>
+            <span className="mx-2 text-center ">1</span>
             <button className="text-black/60 w-6 h-6 md:w-9 md:h-9 cursor-pointer flex justify-center items-center  bg-[var(--bg-tertiary)] rounded-full  font-bold text-lg md:text-xl">
               +
             </button>
           </div>
 
-          <div>
+          <div className="flex gap-2">
             <Button
               rounded="3xl"
               className="bg-[var(--bg-secondary)] py-2 px-5 text-white"

@@ -1,0 +1,4 @@
+
+
+.slick-dots li.slick-active {
+@apply !border !border-[var(--bg-secondary)] ;}

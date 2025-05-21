@@ -14,6 +14,7 @@ const Register = lazy(() => import("@/pages/Register"));
 const Login = lazy(() => import("@/pages/Login"));
 import ProtectedComponent from "@/components/auth/ProtectedComponent";
 
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
