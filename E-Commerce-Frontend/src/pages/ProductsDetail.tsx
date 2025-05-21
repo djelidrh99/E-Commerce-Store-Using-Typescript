@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 
 const ProductsDetail = () => {
 const dispatch = useAppDispatch();
-const {imgGroup,loading,error} = useAppSelector((state) => state.productDetails);
+const {imgGroup,loading,error,productFullInfo} = useAppSelector((state) => state.productDetails);
 const {Id}= useParams<{Id:string}>()
 
 
@@ -39,7 +39,7 @@ useEffect(()=> {
 
                 
         <div className="container  grid grid-cols-1   py-10 mx-auto max-lg:px-2 lg:px-10">
-            <ProductDetail imgGroup={imgGroup}/>
+            <ProductDetail productFullInfo={productFullInfo} imgGroup={imgGroup}/>
         </div>
         </Loading>
       </div>

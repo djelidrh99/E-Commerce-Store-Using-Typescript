@@ -7,12 +7,14 @@ import { getProducDetailsThunk } from "./getProductDetailsThunk/getProductDetail
 
 type TProductDetailsState = {
   imgGroup: string[];
+  productFullInfo: TProduct;
   loading: TLoading;
   error: null | string;
 };
 
 const initialState: TProductDetailsState = {
   imgGroup: [],
+  productFullInfo: {} as TProduct,
   loading: "idle",
   error: null,
 };
@@ -31,6 +33,7 @@ export const productDetailsSlice = createSlice({
     builder.addCase(getProducDetailsThunk.fulfilled,(state,action)=>{
         state.loading="successed"
         state.imgGroup = action.payload.img_group ?? []
+        state.productFullInfo = action.payload
         state.error=null
     })
     builder.addCase(getProducDetailsThunk.rejected,(state,action)=>{

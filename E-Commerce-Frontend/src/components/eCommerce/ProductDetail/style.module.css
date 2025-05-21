@@ -1,5 +1,5 @@
 .productDetailsContainer {
-  @apply flex  gap-8
+  @apply flex justify-center flex-wrap  gap-8 
 }
 
 .productDetailsContainer ul li {
