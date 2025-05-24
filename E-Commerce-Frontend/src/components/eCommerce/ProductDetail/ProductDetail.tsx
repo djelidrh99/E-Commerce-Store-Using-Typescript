@@ -2,7 +2,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import styles from "./style.module.css";
-import { Button, RatingGroup } from "@chakra-ui/react";
+import { Button, Spinner } from "@chakra-ui/react";
 import Like from "@assets/svg/heart.svg?react";
 import Share from "@assets/svg/share.svg?react";
 import "./activeSlick.css";
@@ -13,10 +13,19 @@ const { productDetailsContainer } = styles;
 
 type TProductDetailProps = {
   imgGroup: string[];
-  productFullInfo : TProduct
+  productFullInfo: TProduct;
+  addProductToCart: (id: number) => void;
+  addProductToWishlist: (id: number) => void;
+  isLoading: boolean;
 };
 
-const ProductDetail = ({ imgGroup,productFullInfo }: TProductDetailProps) => {
+const ProductDetail = ({
+  imgGroup,
+  productFullInfo,
+  addProductToCart,
+  addProductToWishlist,
+  isLoading,
+}: TProductDetailProps) => {
   const settings = {
     customPaging: function (i: number) {
       return (
@@ -55,13 +64,16 @@ const ProductDetail = ({ imgGroup,productFullInfo }: TProductDetailProps) => {
         </div>
         <div className="flex-1 my-4">
           <h5 className="text-black font-bold">
-            {productFullInfo.price}$ <span className=" text-[var(--text-secondary)]">150$</span>{" "}
+            {productFullInfo.price}${" "}
+            <span className=" text-[var(--text-secondary)] line-through">
+              150$
+            </span>{" "}
           </h5>
           <h5 className=" text-[var(--text-secondary)] mt-2">
             Product Code : 546545 <span>In stock</span>
           </h5>
           <h5 className=" text-[var(--text-secondary)] mt-2">
-            <Rating/>
+            <Rating />
             <span>140 reviews</span> | <span>545 sold</span>
           </h5>
         </div>
@@ -86,12 +98,23 @@ const ProductDetail = ({ imgGroup,productFullInfo }: TProductDetailProps) => {
             <Button
               rounded="3xl"
               className="bg-[var(--bg-primary)] py-2 px-5 text-white"
+              onClick={() => addProductToCart(productFullInfo.id)}
             >
-              Add To Cart
+              {isLoading ? (
+                <>
+                  <Spinner
+                    size={"md"}
+                    className="border  border-transparent border-t-white"
+                  />
+                </>
+              ) : (
+                "Add To Cart"
+              )}
             </Button>
             <Button
               rounded="3xl"
               className="border border-gray-400 p-2 text-white"
+              onClick={() => addProductToWishlist(productFullInfo.id)}
             >
               <Like />
             </Button>

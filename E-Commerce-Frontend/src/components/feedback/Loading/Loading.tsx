@@ -3,12 +3,14 @@ import CategoriesSkeleton from "@components/feedback/Skeleton/CategoriesSkeleton
 import ProductsSkeleton from "@components/feedback/Skeleton/ProductsSkeleton";
 import CartSkeleton from "@components/feedback/Skeleton/CartSkeleton";
 import LottieHandler from "../LottierHandler/LottierHandler";
+import ProductDetailSkeleton from "@components/feedback/Skeleton/ProductDetailSkeleton";
 
 
 const skeletonObject ={
     categories: CategoriesSkeleton,
     products:ProductsSkeleton ,
-    cart:CartSkeleton
+    cart:CartSkeleton,
+    productDetail: ProductDetailSkeleton
 }
 
 type TLoadingProps={

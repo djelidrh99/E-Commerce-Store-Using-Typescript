@@ -23,7 +23,7 @@ export const productDetailsSlice = createSlice({
   name: "productDetails",
   initialState,
   reducers: {
-   
+ 
   },
   extraReducers: (builder) => {
     builder.addCase(getProducDetailsThunk.pending,(state)=>{
@@ -31,9 +31,13 @@ export const productDetailsSlice = createSlice({
         state.error=null
     })
     builder.addCase(getProducDetailsThunk.fulfilled,(state,action)=>{
+      if (action.payload === undefined) {
+          state.loading = "failed";
+          state.error = "Product not found";
+          return;
+        }
         state.loading="successed"
         state.imgGroup = action.payload.img_group ?? []
-        state.productFullInfo = action.payload
         state.error=null
     })
     builder.addCase(getProducDetailsThunk.rejected,(state,action)=>{
